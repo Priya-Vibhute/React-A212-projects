@@ -15,6 +15,8 @@ function Home() {
         Effect 1
       </Link>
 
+      <br />
+
       <Link
         name=""
         id=""
@@ -24,6 +26,32 @@ function Home() {
         to={"/use-effect-2"}
       >
         Effect 2
+      </Link>
+
+      <br />
+
+      <Link
+        name=""
+        id=""
+        class="btn btn-primary"
+        href="#"
+        role="button"
+        to={"/recipes"}
+      >
+        Recipes
+      </Link>
+
+      <br />
+
+      <Link
+        name=""
+        id=""
+        class="btn btn-primary"
+        href="#"
+        role="button"
+        to={"/products"}
+      >
+        Products
       </Link>
     </div>
   );
