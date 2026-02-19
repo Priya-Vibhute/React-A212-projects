@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import B from "./B";
+
+
+export const userContext=createContext()
 
 function A() {
   const [msg, setMsg] = useState("Bye Bye");
@@ -7,7 +10,9 @@ function A() {
   return (
     <div>
       <p>A component</p>
-      <B/>
+      <userContext.Provider value={{msg,name:"Nisha"}}>
+        <B />
+      </userContext.Provider>
     </div>
   );
 }
