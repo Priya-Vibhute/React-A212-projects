@@ -7,6 +7,10 @@ import Layout from "./components/common/Layout";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Product from "./components/Product";
+import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
+import Reducer from "./components/Reducer";
+import Memoization from "./components/Memoization";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +28,22 @@ const router = createBrowserRouter([
       {
         path: "products/:id",
         element: <Product />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "reducer",
+        element: <Reducer />,
+      },
+      {
+        path: "memoization",
+        element: <Memoization />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
